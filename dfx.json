@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "identity_canister_project_backend": {
+      "candid": "src/identity_canister_project_backend/identity_canister_project_backend.did",
+      "package": "identity_canister_project_backend",
+      "type": "rust"
+    },
+    "identity_canister_project_frontend": {
+      "dependencies": [
+        "identity_canister_project_backend"
+      ],
+      "source": [
+        "src/identity_canister_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "identity_canister_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
