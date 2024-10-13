@@ -6,12 +6,8 @@
       "type": "rust"
     },
     "identity_canister_project_frontend": {
-      "dependencies": [
-        "identity_canister_project_backend"
-      ],
-      "source": [
-        "src/identity_canister_project_frontend/dist"
-      ],
+      "dependencies": ["identity_canister_project_backend"],
+      "source": ["src/identity_canister_project_frontend/dist"],
       "type": "assets",
       "workspace": "identity_canister_project_frontend"
     }

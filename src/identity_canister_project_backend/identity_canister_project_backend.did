@@ -1,3 +1,6 @@
 service : {
-    "greet": (text) -> (text) query;
+    "register_identity": (text, text, text) -> (bool);
+    "get_identity": (text) -> (opt record { name: text; email: text; did: text }) query;
+    "update_identity": (text, text, text) -> (bool);
+    "delete_identity": (text) -> (bool);
 }
